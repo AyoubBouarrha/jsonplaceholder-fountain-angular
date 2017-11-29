@@ -1,0 +1,19 @@
+<div class="component">
+  <h2>List des utilisateurs:</h2>
+  <br>
+
+  <div class="dropdown">
+
+    <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
+        {{$ctrl.selectedUser}}
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu">
+      <li ng-repeat="user in $ctrl.users | orderBy:'name'"><a href="" ng-click="$ctrl.changeCurrentUser(user)">{{user.name}}</a></li>
+    </ul>
+
+  </div>
+  
+  <br><br>
+</div>

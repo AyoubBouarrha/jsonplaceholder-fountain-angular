@@ -1,0 +1,8 @@
+<div class="component">
+  <h3>Listes des TODOS:</h3>
+  <br>
+  <div ng-repeat="todo in $ctrl.todos" class="line-todo">
+    <span style="font-size: 20px;" class="title-todo">{{todo.title}} </span>
+    <label style="font-size: 18px;"><input type="checkbox" ng-model="todo.completed" ng-change="$ctrl.changeTodoStatut(todo)" title="Accomplie"  > Accomplie </label>
+  </div>
+</div>
